@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "stdbool.h": "c",
+        "armstrong_numbers.h": "c"
+    }
+}

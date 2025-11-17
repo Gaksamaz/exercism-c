@@ -1,0 +1,36 @@
+📘 rcism C Track Solutions
+
+This repository contains my solutions to various exercises from the Exercism C Track.
+Each folder represents one exercise and includes:
+
+Question.txt – A brief description or summary of the exercise
+
+.c and .h files – My solution implementation
+
+main.c – A simple test program to demonstrate or manually test the solution
+
+Additional configuration or helper files when needed
+
+🚀 Purpose of This Repository
+
+To practice and improve my C programming skills
+
+To build clean, modular, and well-structured C code
+
+To become comfortable with Git & GitHub workflows
+
+To document my learning progress on Exercism
+
+This repository will continue to grow as I complete more exercises.
+
+▶️  How to Compile and Run
+
+You can compile a specific exercise manually using:
+
+gcc *.c -o main
+./main
+
+📝 Notes
+
+These solutions are created for learning purposes.
+They are not official Exercism answers but my own implementations and interpretations.
