@@ -14,7 +14,7 @@ typedef enum
     GREY,
     WHITE
 } resistor_band_t;
-
+//color code
 int color_code(resistor_band_t colors[]);
 
 #endif
