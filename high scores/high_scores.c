@@ -12,7 +12,7 @@ int32_t latest(const int32_t *scores, size_t scores_len)
 int32_t personal_best(const int32_t *scores, size_t scores_len)
 {
     int best_score = scores[0];
-    for (int i = 0; i < scores_len; i++)
+    for (size_t i = 0; i < scores_len; i++)
     {
         if (scores[i] > best_score)
         {
@@ -22,7 +22,7 @@ int32_t personal_best(const int32_t *scores, size_t scores_len)
     return best_score;
     
 }
-//Retrun tehe top three scores
+//Retrun the top three scores
 size_t personal_top_three(const int32_t *scores, size_t scores_len, int32_t *output)
 {
     
