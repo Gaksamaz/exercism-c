@@ -15,7 +15,7 @@ static const char* color_names[] =
     "white"
 };
 
-// Exercism testleri color_code() için sadece enum → sayı dönüşü bekliyor.
+// eum -> number
 resistor_band_t color_code(resistor_band_t color) 
 {
     return color;
