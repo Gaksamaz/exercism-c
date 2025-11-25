@@ -8,7 +8,7 @@ bool is_armstrong_number(int candidate) {
     int original = candidate;
     int digits = 0;
 
-    // Step 1: Count digits.
+    // Step 1: Count digits
     int temp = candidate;
     while (temp > 0) {
         digits++;
