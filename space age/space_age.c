@@ -15,7 +15,7 @@ static const float orbital_periods[] = {
 
 float age(planet_t planet, int64_t seconds)
 {
-    // Invalid enum check.
+    // Invalid enum check
     if (planet < MERCURY || planet > NEPTUNE) {
         return -1.0f;  
     }
