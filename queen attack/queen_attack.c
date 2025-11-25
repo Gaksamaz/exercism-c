@@ -10,22 +10,22 @@ attack_status_t can_attack(position_t q1, position_t q2) {
         return INVALID_POSITION;
     }
 
-    // Aynı karede olamazlar
+    // not be same square
     if (q1.row == q2.row && q1.column == q2.column) {
         return INVALID_POSITION;
     }
 
-    // Aynı satır
+    // same row
     if (q1.row == q2.row) {
         return CAN_ATTACK;
     }
 
-    // Aynı sütun
+    // same column
     if (q1.column == q2.column) {
         return CAN_ATTACK;
     }
 
-    // Aynı diagonal (farkların mutlak değeri eşitse)
+    // same diagonal
     if ((q1.row > q2.row ? q1.row - q2.row : q2.row - q1.row) ==
         (q1.column > q2.column ? q1.column - q2.column : q2.column - q1.column)) {
         return CAN_ATTACK;
