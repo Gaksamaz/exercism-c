@@ -10,22 +10,22 @@ attack_status_t can_attack(position_t q1, position_t q2) {
         return INVALID_POSITION;
     }
 
-    // not be same square
+    // not be same square.
     if (q1.row == q2.row && q1.column == q2.column) {
         return INVALID_POSITION;
     }
 
-    // same row
+    // same row.
     if (q1.row == q2.row) {
         return CAN_ATTACK;
     }
 
-    // same column
+    // same column.
     if (q1.column == q2.column) {
         return CAN_ATTACK;
     }
 
-    // same diagonal
+    // same diagonal.
     if ((q1.row > q2.row ? q1.row - q2.row : q2.row - q1.row) ==
         (q1.column > q2.column ? q1.column - q2.column : q2.column - q1.column)) {
         return CAN_ATTACK;

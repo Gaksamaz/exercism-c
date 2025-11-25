@@ -15,9 +15,9 @@ static const float orbital_periods[] = {
 
 float age(planet_t planet, int64_t seconds)
 {
-    // Invalid enum check (Exercism special case!)
+    // Invalid enum check.
     if (planet < MERCURY || planet > NEPTUNE) {
-        return -1.0f;  // test bunu istiyor
+        return -1.0f;  
     }
 
     float earth_years = (float)seconds / earth_year_seconds;

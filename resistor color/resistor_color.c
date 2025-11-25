@@ -15,7 +15,7 @@ static const char* color_names[] =
     "white"
 };
 
-// eum -> number
+// eum -> number.
 resistor_band_t color_code(resistor_band_t color) 
 {
     return color;

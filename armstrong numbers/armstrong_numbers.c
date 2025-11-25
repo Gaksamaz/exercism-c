@@ -8,7 +8,7 @@ bool is_armstrong_number(int candidate) {
     int original = candidate;
     int digits = 0;
 
-    // Step 1: Count digits
+    // Step 1: Count digits.
     int temp = candidate;
     while (temp > 0) {
         digits++;
@@ -18,7 +18,7 @@ bool is_armstrong_number(int candidate) {
     if (digits == 0)  // candidate = 0
         digits = 1;
 
-    // Step 2: Sum of each digit^digits
+    // Step 2: Sum of each digit^digits.
     int sum = 0;
     temp = candidate;
 
@@ -28,6 +28,6 @@ bool is_armstrong_number(int candidate) {
         temp /= 10;
     }
 
-    // 0 especially is a armstrong number (0^1 = 0)
+    // 0 especially is a armstrong number (0^1 = 0).
     return sum == original;
 }
