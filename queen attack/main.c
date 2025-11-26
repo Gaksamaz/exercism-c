@@ -17,7 +17,7 @@ void print_result(attack_status_t s) {
 
 int main(void) {
 
-    // Example: c5 (2,3) and f2 (5,6)
+    // Example: c5 (2,3) and f2 (5,6).
     position_t white = {3, 2};
     position_t black = {6, 5};
 

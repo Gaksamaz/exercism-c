@@ -4,7 +4,7 @@
 int main(void) 
 {
 
-    // 1. only take one color value
+    // 1. only take one color value.
     printf("Color code of RED: %d\n", color_code(RED));
     printf("Color code of GREEN: %d\n", color_code(GREEN));
 
