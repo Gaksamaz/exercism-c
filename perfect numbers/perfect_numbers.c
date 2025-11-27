@@ -2,7 +2,7 @@
 
 kind classify_number(int number)
 {
-    if (number < 0) // if input is not positive return ERROR
+    if (number < 0 || number == 0) // if input is not positive return ERROR
     {
         return ERROR;
     }
