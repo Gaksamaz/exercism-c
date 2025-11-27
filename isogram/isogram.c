@@ -11,9 +11,9 @@ bool is_isogram(const char phrase[])
 
     for (int i = 0; i < phrase_len; i++)
     {
-        char lower_phrase = tolower(phrase[i]);
+        char lower_phrase = tolower(phrase[i]); // convert all letters to lower-case
 
-        if (!isalpha(lower_phrase))
+        if (!isalpha(lower_phrase)) // if it is number continue
         {
             continue;
         }
