@@ -1,7 +1,8 @@
 #include "robot_simulator.h"
 #include <stddef.h>  
 
-robot_status_t robot_create(robot_direction_t direction, int x, int y) {
+robot_status_t robot_create(robot_direction_t direction, int x, int y) 
+{
     robot_status_t robot;
 
     robot.direction = direction;
@@ -11,15 +12,19 @@ robot_status_t robot_create(robot_direction_t direction, int x, int y) {
     return robot;
 }
 
-void robot_move(robot_status_t *robot, const char *commands) {
-    if (robot == NULL || commands == NULL) {
+void robot_move(robot_status_t *robot, const char *commands) 
+{
+    if (robot == NULL || commands == NULL) 
+    {
         return;
     }
 
-    for (int i = 0; commands[i] != '\0'; i++) {
+    for (int i = 0; commands[i] != '\0'; i++) 
+    {
         char cmd = commands[i];
 
-        switch (cmd) {
+        switch (cmd) 
+        {
             case 'R':
                 robot->direction = (robot->direction + 1) % 4;
                 break;
@@ -29,7 +34,8 @@ void robot_move(robot_status_t *robot, const char *commands) {
                 break;
 
             case 'A':
-                switch (robot->direction) {
+                switch (robot->direction) 
+                {
                     case DIRECTION_NORTH:
                         robot->position.y++;
                         break;
