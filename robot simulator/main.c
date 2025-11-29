@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "robot_simulator.h"
 
-const char* direction_to_string(robot_direction_t direction) {
-    switch (direction) {
+const char* direction_to_string(robot_direction_t direction) 
+{
+    switch (direction) 
+    {
         case DIRECTION_NORTH: return "NORTH";
         case DIRECTION_EAST:  return "EAST";
         case DIRECTION_SOUTH: return "SOUTH";
@@ -11,7 +13,8 @@ const char* direction_to_string(robot_direction_t direction) {
     }
 }
 
-int main(void) {
+int main(void) 
+{
     // Robot starting position
     robot_status_t robot = robot_create(DIRECTION_NORTH, 7, 3);
 
